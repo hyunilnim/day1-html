@@ -45,6 +45,11 @@ main p {
     font: bold italic 16px/1.5 "Orbitron", "돋움";
 }
 
+footer ul {
+    font-size: 100px;
+    color: hotpink;
+}
+
 /* 
     랜더링 동작 방식
     - html태그를 해석하여 DOM생성(Document Object Model)
