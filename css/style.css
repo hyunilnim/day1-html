@@ -1,1 +1,59 @@
 @import 'reset.css';
+
+/* 
+    서식 관련 구문
+    font-weight: normal / bold;
+    font-style: normal / italic;
+    font-size: 14px / 1rem / 1vw / 1vh;
+    line-height: 14px / 1.5;
+    font-family: 'arial';
+    color: pink;
+
+    시스템 폰트: 특정 os에 기본적으로 내장된 폰트
+    한글: "돋움", "굴림"
+    영어: "arial", "san-serif", "verdana"
+
+    대체폰트
+    font-family 속성에 복수개 이상의 폰트를 적용
+    첫 번째 적용 불가시 다음 폰트 적용
+*/
+
+body {
+    padding: 100px;
+}
+
+header h1 {
+    font: 600 40px/1 "Orbitron";
+    margin-bottom: 40px;
+}
+
+header nav a {
+    font : 16px/1 "Orbitron";
+    padding: 10px 20px;
+}
+
+main h1 {
+    font-family: "Cute Font";
+}
+
+main p {
+    /* font-weight: bold;
+    font-style: italic;
+    font-family: "arial", "돋움";
+    font-size: 12px;
+    line-height: 1.5; */
+    font: bold italic 16px/1.5 "Orbitron", "돋움";
+}
+
+/* 
+    랜더링 동작 방식
+    - html태그를 해석하여 DOM생성(Document Object Model)
+    - css를 해석하여 CSSDOM 생성
+    - 위 두 객체가 생성되기 전까지는 화면 랜더링 블록됨
+
+    구글 웹 폰트를 <Link>방식으로 연결하는게 좋은 이유
+    - DOM 생성시 서버에서 폰트를 사전에 미리 다운로드
+    - 많은 웹폰트 연결로 인해 화면 랜더링 지연을 최소화 가능
+    - layout shifting 방지 가능 (컨텐츠의 재구성으로 높이값이 어긋나 덜컹거리는 현상)
+    - link방식은 한 번 다운로드 받은 폰트의 캐싱처리로 인해 layout shifting 최소화
+*/
