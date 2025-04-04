@@ -22,10 +22,6 @@ body {
     padding: 100px;
 }
 
-header, main, footer {
-    border: 1px solid gray;
-}
-
 /* header */
 header {
     margin-bottom: 80px;
@@ -54,12 +50,28 @@ main h1 {
 main figure {
     width: 300px;
     height: 300px;
+    margin-bottom: 30px;
 }
 
 main p {
+    width: 50%;
     font-size: 16px;
     line-height: 1.5;
+    margin-bottom: 30px;
+    text-align: justify;
     /* font: bold italic 16px/1.5 "Orbitron", "Noto Sans KR"; */
+}
+
+main a {
+    background-color: cornflowerblue;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    width: 100px;
+    height: 34px;
+    display: inline-block;
+    text-align: center;
+    line-height: 34px;
 }
 
 /* footer */
@@ -79,4 +91,14 @@ footer ul {
     - 많은 웹폰트 연결로 인해 화면 랜더링 지연을 최소화 가능
     - layout shifting 방지 가능 (컨텐츠의 재구성으로 높이값이 어긋나 덜컹거리는 현상)
     - link방식은 한 번 다운로드 받은 폰트의 캐싱처리로 인해 layout shifting 최소화
+*/
+
+/* 
+    정렬 기능 (text-align)
+    - 블록요소에 정렬 기능 지정
+    - 블록요소 안쪽에 있는 인라인 요소들이 정렬됨
+*/
+
+/*
+    display: block / inline / inline block
 */
