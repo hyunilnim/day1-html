@@ -1,5 +1,7 @@
 :root {
-    --point-color: rgba(255, 105, 180, 0.5);
+    --point-color: rgba(255, 105, 180, 1);
+    --point-rgb: rgb(255, 105, 180);
+    --point-lch: lch(80% 60 0 / 1);
     --point-font: "Orbitron";
 }
 
