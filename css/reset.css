@@ -1,3 +1,7 @@
+html {
+    /* 1rem size 변경 */
+    font-size: 16px;
+}
 * {
     margin: 0px;
     padding: 0px;

@@ -28,13 +28,14 @@ header {
 }
 
 header h1 {
-    font: 600 40px/1 "Orbitron";
+    font: 600 3.5rem/1 "Orbitron";
     margin-bottom: 40px;
 }
 
 header nav a {
-    font : 16px/1 "Orbitron";
+    font : 1rem/1 "Orbitron";
     padding: 10px 20px;
+    letter-spacing: 1px;
 }
 
 /* main */
@@ -43,7 +44,7 @@ main {
 }
 
 main h1 {
-    font-size: 24px;
+    font-size: 1.5rem;
     margin-bottom: 10px;
 }
 
@@ -57,7 +58,6 @@ main figure {
 
 main p {
     width: 50%;
-    font-size: 16px;
     line-height: 1.5;
     margin-bottom: 30px;
     text-align: justify;
@@ -65,10 +65,10 @@ main p {
 }
 
 main a {
-    background-color: cornflowerblue;
+    background-color: black;
     color: white;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 0.7rem;
     width: 100px;
     height: 30px;
     display: inline-block;
@@ -78,9 +78,18 @@ main a {
 }
 
 /* footer */
+
+footer {
+    border-top: 1px solid black;
+}
+
 footer ul {
-    font-size: 100px;
-    color: hotpink;
+    font-size: 1.2rem;
+    color: black;
+}
+
+footer p {
+    font-size: 0.8rem;
 }
 
 /* 
@@ -104,4 +113,10 @@ footer ul {
 
 /*
     display: block / inline / inline block
+*/
+
+/* 
+    rem 단위의 개념
+    - 웹에서 텍스트 크기 지정할 때 주로 쓰이는 단위
+    - 1rem = 16px, 변경 가능
 */
