@@ -64,6 +64,53 @@
 -->
 
 <body>
+
+<!-- 
+    flex 
+    - 화면 UI를 제작하기 위해 나온 웹 표준 문법
+
+    flex 레이아웃 배치시 유의점
+    1. 부모요소에 flex를 설정함으로서 자식요소의 배치 방식을 결정
+    2. 중심축(가로), 반대축(세로)
+    3. 부모요소에 flex설정시 모든 자식 요소는 inline-block화 됨
+
+    자식 요소 가로 배치 방법
+    justify-content: 
+    - flex-start (기본값)
+    - center
+    - flex-end
+    - space-between (요소간 사이에만 간격 균등배치 : 제일 많이 사용) 
+    - space-around (용소간 양옆 포함 간격 균등 배치)
+    - space-evenly (중첩된 간격까지 포함해서 균등 배치)
+
+    자식 요소 세로 배치 방법
+    - flex에서는 줄바꿈을 위한 설정을 직접 처리
+    - 줄바꿈된 요소와 그렇지 않은 요소의 세로배치 구문이 달라짐
+    - flex-wrap: wrap; (no-wrap:줄바꿈 처리 안함, 기본값 )
+
+    세로 배치 구문 (wrap적용중일때, 줄바꿈될때)
+    align-content
+    - flex-start (기본)
+    - center
+    - flex-end
+    - space-between
+    - space-around
+    - space-evenly  
+    
+    세로 배치 구문 (nowrap 적용시, 줄바꿈 안될때)
+    align-items
+    - flex-start
+    - center
+    - flex-end
+  -->
+  <section>
+    <article class="box1">1</article>
+    <article class="box2">2</article>
+    <article class="box3">3</article>
+    <article class="box4">4</article>
+  </section>
+
+
   <!-- 
     시맨틱 태그
     html 컨텐츠를 보다 구조적으로 구분하기 위한 명칭이 붙어있는 wrapping 요소
